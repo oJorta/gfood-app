@@ -66,11 +66,40 @@ main{
     display: flex;
     flex-direction: column;
     gap: 3rem;
-    width: 47%;
+    width: 40%;
 }
 
-h1 > span{
+.presentation > h1{
+    line-height: 9rem;
+}
+
+.orange-txt{
     color: var(--tangerine-clr);
+}
+
+.bike-delivery{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 25rem;
+    padding: .5rem;
+    border-radius: 3rem;
+
+    background-color: var(--light-tangerine-clr);
+    color: var(--tangerine-clr);
+}
+
+.bike-delivery > p{
+    margin-left: 1rem;
+    font-weight: 600;
+}
+
+.bike-delivery > img{
+    height: 4rem;
+    background-color: #fff;
+    border-radius: 100%;
+    padding: .5rem;
 }
 
 .order-options{
@@ -92,4 +121,82 @@ h1 > span{
     display: flex;
     align-items: center;
     gap: 1rem;
+}
+
+.fast-options{
+    display: flex;
+    justify-content: center;
+    
+    width: 40%;
+
+    background: url(/assets/backgrounds/gradient-bg.png) no-repeat top right;
+    background-size: contain;
+}
+
+.fast-options-grid{
+    display: grid;
+    height: 100%;
+    padding-top: 5rem;
+    grid-template-columns: repeat(2, minmax(17rem, 1fr));
+    grid-template-rows: repeat(2, 24rem);
+    gap: 6rem 2rem;
+}
+
+.food-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+    padding: .5rem;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px 0px #00000031;
+    border-radius: 2.3rem;
+    background-size: 80px 100%;
+}
+
+.food-card > img{
+    height: 10rem;
+    transition: 0.5s;
+}
+
+.food-card > img:hover{
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+.arrows > i{
+    font-size: 4rem;
+}
+
+.separator{
+    height: 10rem;
+}
+
+.establishment-info{
+    display: flex;
+    justify-content: space-around;
+    padding: 4rem 8rem;
+    border-radius: 4rem;
+    box-shadow: 0px 0px 5px #aaa8a870;
+
+}
+
+.info-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+}
+
+.info-wrapper > i{
+    font-size: 2.5rem;
+    color: #fff;
+    padding: .5rem;
+    border-radius: 100%;
+    background-color: var(--tangerine-clr);
+}
+
+.vertical-row{
+    width: .1rem;
+    background-color: var(--gray-clr);
 }

@@ -11,6 +11,7 @@
     --tangerine-clr: #F48E28;
     --gray-clr: #B6B6B6;
     --light-tangerine-clr: #F5DDC4;
+    overflow-y: overlay;
 }
 
 a{
@@ -19,7 +20,7 @@ a{
 }
 
 h1{
-    font-size: 9.5rem;
+    font-size: 8rem;
     font-weight: 700;
 }
 
@@ -40,7 +41,7 @@ h4{
 
 h5{
     font-size: 1.8rem;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 p{
@@ -51,4 +52,8 @@ p{
 .p2{
     font-size: 1.3rem;
     font-weight: 400;
+}
+
+.bold{
+    font-weight: 700;
 }
