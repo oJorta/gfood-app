@@ -1,0 +1,43 @@
+@media only screen and (max-width: 1250px){
+    .presentation{
+        width: 50%
+    }
+    .fast-options{
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 1070px){
+    .start{
+        flex-direction: column;
+        align-items: center;
+    }
+    .presentation{
+        width: 100%
+    }
+    .fast-options{
+        flex-direction: column;
+        width: 100%;
+        background: none;
+    }
+    .fast-options-grid{
+        grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+        grid-template-rows: 24rem;
+    }
+    
+}
+
+@media only screen and (max-width: 780px){
+    .logo{
+        height: 5rem;
+    }
+    .nav{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    h1{
+        font-size: 6.4rem;
+    }
+}

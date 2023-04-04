@@ -5,7 +5,7 @@ body{
 }
 
 #app{
-    width: 80%;
+    width: 90%;
 }
 
 header{
@@ -67,11 +67,12 @@ main{
     flex-direction: column;
     gap: 3rem;
     width: 40%;
+    padding-top: 3rem;
 }
 
-.presentation > h1{
+/* .presentation > h1{
     line-height: 9rem;
-}
+} */
 
 .orange-txt{
     color: var(--tangerine-clr);
@@ -115,12 +116,15 @@ main{
     border-radius: 1rem;
     background-color: var(--tangerine-clr);
     color: #fff;
+    cursor: pointer;
 }
 
 .order-process{
     display: flex;
     align-items: center;
     gap: 1rem;
+
+    cursor: pointer;
 }
 
 .fast-options{
@@ -210,8 +214,8 @@ main{
 .popular-items-grid{
     display: grid;
     width: 100%;
-    padding-top: 3rem;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    padding: 3rem 0rem;
+    grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
     grid-template-rows: repeat(2, minmax(20rem, 30rem));
     gap: 3.5rem;
 }
@@ -247,4 +251,23 @@ main{
     background-color: var(--tangerine-clr);
     border: none;
     border-radius: 2rem;
+    cursor: pointer;
+}
+
+#more-pdct-btn{
+    display: flex;
+    align-items: center;
+    border-radius: 5rem;
+    padding: 0rem 0rem 0rem 1.5rem;
+    justify-content: space-between;
+
+    border: none;
+    outline: none;
+    color: #fff;
+    background-color: var(--tangerine-clr);
+    cursor: pointer;
+}
+
+#more-pdct-btn > img{
+    height: 5rem;
 }
