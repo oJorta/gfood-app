@@ -165,7 +165,14 @@ main{
     transition: 0.5s;
 }
 
+.arrows{
+    display: flex;
+    gap: 3.6rem;
+    align-items: center;
+}
+
 .arrows > img{
+    scale: 1.3;
 }
 
 .separator{
@@ -202,10 +209,14 @@ main{
     background-color: var(--gray-clr);
 }
 
-.popular-items{
+.sect-header-align{
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
+}
+
+.popular-items{
 }
 
 .popular-items-grid{
@@ -279,9 +290,6 @@ main{
 }
 
 .services{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .service-cards-wrapper{
@@ -299,8 +307,8 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 4.2rem;
-    padding: 9rem 5rem;
+    gap: 3rem;
+    padding: 8rem 4rem;
 
     text-align: center;
     border: 2px solid var(--gray-clr);
@@ -324,4 +332,42 @@ main{
 .service-card:hover{
     transform: scale(1.03);
     transition: 0.3s;
+}
+
+.how-to-work{
+}
+
+.steps-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 3rem;
+
+    background: url(/assets/backgrounds/line-gb.png) no-repeat;
+    background-size: 90%;
+    background-position: 50% 35%;
+}
+
+.step{
+    display: flex;
+    width: 32rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.step > img{
+    width: 32rem;
+}
+
+.steps-wrapper .step:nth-child(1){
+    align-items: start;
+    text-align: left;
+}
+
+.steps-wrapper .step:nth-child(3){
+    align-items: end;
+    text-align: right;
 }
