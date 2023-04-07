@@ -1,12 +1,12 @@
 body{
-    display: flex;
-    justify-content: center;
-    width: 100vw;
+    width: 85vw;
+    margin: 0 auto;
 }
 
-#app{
+/* #app{
     width: 85%;
 }
+ */
 
 header{
     display: flex;
@@ -303,7 +303,6 @@ main{
     grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
     /* grid-template-rows: ; */
     place-content: center;
-    place-items: center;
     padding-top: 3rem;
     gap: 5.4rem;
 }
@@ -434,3 +433,68 @@ main{
 .next-card{
     right: -2.5rem;
 }
+
+.newsletter{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+    height: 32rem;
+    padding: 6rem 9rem 6rem 0rem;
+    position: relative;
+    
+    background-color: #000;
+    border-radius: 4rem;
+}
+
+.newsletter img{
+    position: absolute;
+    left: 0;
+    top: -30%;
+    width: 55rem;
+}
+
+.newsletter > form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 45%;
+    height: 100%;
+
+    color: #fff;
+}
+
+.newsletter > form p{
+    font-size: 1.6rem;
+}
+.subscription-field{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 5rem;
+    border-radius: 1rem;
+    padding: .6rem .6rem .6rem 2rem ;
+    background-color: #fff;
+}
+.subscription-field *{
+    height: 100%;
+}
+.subscription-field > input{
+    width: 80%;
+    border: none;
+    outline: none;
+}
+.subscription-field > button{
+    color: white;
+    background-color: var(--tangerine-clr);
+    border: none;
+    padding: 0rem 1.5rem;
+    border-radius: 1rem;
+    font-weight: 600;
+}
+.subscription-field > button:hover{
+    cursor: pointer;
+}
+
+
+

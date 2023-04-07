@@ -5,6 +5,35 @@
     .fast-options{
         width: 50%;
     }
+
+    .steps-wrapper{
+        background: none;
+    }
+}
+
+@media only screen and (max-width: 1130px){
+    .step{
+        display: flex;
+        width: 25rem;
+    }
+    
+    .step > img{
+        width: 25rem;
+    }
+
+    .newsletter{
+        height: 28rem;
+        padding: 5rem 7rem 5rem 0rem;
+    }
+
+    .newsletter > img{
+        top: -22%;
+        width: 45rem;
+    }
+
+    .newsletter > form p{
+        font-size: 1.2rem;
+    }
 }
 
 @media only screen and (max-width: 1070px){
@@ -35,6 +64,67 @@
     }
 }
 
+@media only screen and (max-width: 950px){
+    .newsletter{
+        justify-content: space-between;
+        height: 28rem;
+        padding: 5rem 5rem 5rem 3rem;
+    }
+
+    .newsletter > img{
+        position: static;
+        left: 0;
+        top: 0;
+        width: 35rem;
+    }
+
+    .newsletter > form p{
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    .steps-wrapper{
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .step{
+        display: flex;
+        width: 90%;
+        padding: 4rem 2rem;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 3rem;
+        box-shadow: 0px 0px 10px 0px var(--light-tangerine-clr);
+        gap: 0.5rem;
+    }
+    
+    .step > img{
+        width: 25rem;
+    }
+    
+    .steps-wrapper .step:nth-child(1){
+        align-items: center;
+        text-align: center;
+    }
+
+    .steps-wrapper .step:nth-child(2)::before{
+        content: '';
+        background: url(/assets/misc/step-prepare.png) no-repeat bottom center;
+        background-size: contain;
+        width: 25rem;
+        height: 18rem;
+    }
+    .steps-wrapper .step:nth-child(2) img{
+        display: none;
+    }
+    
+    .steps-wrapper .step:nth-child(3){
+        align-items: center;
+        text-align: center;
+    }
+}
+
 @media only screen and (max-width: 800px){
     .logo{
         height: 5rem;
@@ -42,6 +132,11 @@
     nav{
         display: none;
     }
+
+    .fast-options-grid{
+        grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr));
+    }
+
     .popular-items-grid{
         display: flex;
         width: 100%;
@@ -56,6 +151,20 @@
         display: flex;
         flex-direction: column;
         height: 32rem;
+    }
+
+    .newsletter{
+        justify-content: center;
+        height: 28rem;
+        padding: 5rem;
+    }
+
+    .newsletter > img{
+        display: none;
+    }
+
+    .newsletter > form {
+        width: 100%;
     }
 }
 
