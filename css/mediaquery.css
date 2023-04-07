@@ -28,12 +28,27 @@
     
 }
 
-@media only screen and (max-width: 780px){
+@media only screen and (max-width: 800px){
     .logo{
         height: 5rem;
     }
     nav{
         display: none;
+    }
+    .popular-items-grid{
+        display: flex;
+        width: 100%;
+        position: relative;
+    }
+
+    .popular-items-grid > a{
+        display: block;
+    }
+
+    .item{
+        display: flex;
+        flex-direction: column;
+        height: 32rem;
     }
 }
 
