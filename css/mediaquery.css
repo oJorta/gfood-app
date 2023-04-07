@@ -174,4 +174,33 @@
         font-size: 4.8rem;
     }
 
+    .search-bar{
+        gap: 1rem;
+        padding: 1rem;
+    }
+    
+    .search-bar > input{
+        width: 6rem;
+    }
+    
+    .search-bar > img{
+        height: 1.5rem;
+    }
+
+    .order-now{
+        font-size: 1.6rem;
+        font-weight: 700;
+        padding: 0rem 2rem;
+        border-radius: 1rem;
+    }
+    
+    .order-process > img{
+        width: 5rem;
+    }
+
+    .newsletter{
+        justify-content: center;
+        height: 28rem;
+        padding: 3rem 4rem;
+    }
 }
