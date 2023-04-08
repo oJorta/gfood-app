@@ -50,9 +50,9 @@
         background: none;
     }
     .fast-options-grid{
-        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-        grid-template-rows: 24rem;
-        gap: 2rem;
+        grid-template-columns: repeat(auto-fit, minmax(15.5rem, 1fr));
+        grid-template-rows: repeat(2, 18rem);
+        gap: 5rem 2rem;
     }
     
     .testimonials-wrapper > img{
@@ -135,10 +135,6 @@
     }
     nav{
         display: none;
-    }
-
-    .fast-options-grid{
-        grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr));
     }
 
     .popular-items-grid{
