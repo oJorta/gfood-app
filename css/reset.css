@@ -12,6 +12,7 @@
     --gray-clr: #B6B6B6;
     --light-tangerine-clr: #F5DDC4;
     overflow-y: overlay;
+    scroll-behavior: smooth;
 }
 
 a{
