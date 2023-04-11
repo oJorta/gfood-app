@@ -51,7 +51,6 @@
     }
     .fast-options-grid{
         grid-template-columns: repeat(auto-fit, minmax(15.5rem, 1fr));
-        grid-template-rows: repeat(2, 18rem);
         gap: 5rem 2rem;
     }
     
@@ -88,6 +87,13 @@
 }
 
 @media only screen and (max-width: 900px){
+    .establishment-info{
+        justify-content: space-between;
+        padding: 4rem 4rem;
+    }
+    .establishment-info p{
+        font-size: 1.2rem;
+    }
     .steps-wrapper{
         flex-direction: column;
         gap: 2rem;
@@ -191,6 +197,10 @@
         height: 1.5rem;
     }
 
+    .presentation{
+        text-align: center; 
+    }
+
     .order-now{
         font-size: 1.6rem;
         font-weight: 700;
@@ -200,6 +210,17 @@
     
     .order-process > img{
         width: 5rem;
+    }
+
+    .establishment-info{
+        border-radius: 2rem;
+        padding: 3rem;
+    }
+    .establishment-info p{
+        font-size: 1.2rem;
+    }
+    .info-icon img{
+        width: 1.5rem;
     }
 
     .newsletter{

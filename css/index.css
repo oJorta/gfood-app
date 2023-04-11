@@ -39,6 +39,11 @@ nav a:hover{
     transition: 0.3s ease-in-out;
 }
 
+header > div{
+    display: flex;
+    gap: 3rem;
+}
+
 .search-bar{
     display: flex;
     gap: 1.6rem;
@@ -59,6 +64,25 @@ nav a:hover{
 .search-bar > img{
     height: 2rem;
 }
+
+#login-btn{
+    cursor: pointer;
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding: 1.5rem 2.5rem;
+    border: 0;
+    border-radius: 5rem;
+    color: #fff;
+    background-color: var(--tangerine-clr);
+    transition: 0.3s;
+}
+
+#login-btn:hover{
+    box-shadow: 0px 0px 5px 0px #ad5d0d;
+    transition: 0.3s;
+}
+
+/* HEADER STYLING END */
 
 /* APP MAIN STYLING START */
 main{
@@ -154,7 +178,7 @@ main{
     justify-content: center;
     padding-top: 5rem;
     grid-template-columns: repeat(2, minmax(15rem, 18rem));
-    grid-template-rows: repeat(2, 18rem);
+    grid-template-rows: 18rem;
     grid-auto-rows: 18rem;
     gap: 6rem 2rem;
 }
@@ -218,6 +242,7 @@ main{
     flex-direction: column;
     align-items: center;
     gap: .5rem;
+    text-align: center;
 }
 
 .info-icon{
@@ -252,7 +277,8 @@ main{
     width: 100%;
     padding: 3rem 0rem;
     grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
-    grid-template-rows: repeat(2, 32rem);
+    grid-template-rows: 32rem;
+    grid-auto-rows: 32rem;
     gap: 3.5rem;
 }
 
