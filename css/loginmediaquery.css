@@ -1,0 +1,25 @@
+@media only screen and (max-width: 980px){
+    h1{
+        font-size: 6.4rem;
+    }
+
+    h3{
+        font-size: 2.4rem;
+    }
+    
+    label, p{
+        font-size: 1.6rem;
+    }
+    
+}
+
+@media only screen and (max-width: 715px){
+    aside{
+        display: none;
+    }
+
+    main{
+        width: 100%;
+    }
+    
+}

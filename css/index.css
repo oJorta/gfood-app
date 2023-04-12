@@ -168,7 +168,7 @@ main{
     width: 40%;
     justify-content: center;
 
-    background: url(/assets/backgrounds/gradient-bg.png) no-repeat top right;
+    background: url(/assets/img/backgrounds/gradient-bg.png) no-repeat top right;
     background-size: contain;
 }
 
@@ -406,7 +406,7 @@ main{
     width: 100%;
     padding-top: 3rem;
 
-    background: url(/assets/backgrounds/line-gb.png) no-repeat;
+    background: url(/assets/img/backgrounds/line-gb.png) no-repeat;
     background-size: 90%;
     background-position: 50% 35%;
 }

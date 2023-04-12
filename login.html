@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GFood - Login</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/loginmediaquery.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <a href="index.html">
+            <img src="assets/img/gfood-logo.svg" alt="GFood Logo" class="app-logo">
+        </a>
+
+        <div class="form-container">
+            <div class="sign-title">
+                <img src="assets/icons/login-icon.svg" alt="">
+                <h3 id="sign-type">Sign in to GFood</h3>
+            </div>
+            <p>Enter your login info below</p>
+
+            <form action="">
+                <div class="inputs-container">
+                    <div class="form-row">
+                        <label for="email">Email address</label>
+                        <input type="email" name="email" id="email" placeholder="Type your email" required>
+                    </div>
+    
+                    <div class="form-row">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Password must contain: a number, an uppercase letter, a lowercase letter, minimum 8 characters" placeholder="Type your password" required>
+                    </div>
+                </div>
+
+                <div class="login-options">
+                    <div class="remember-me">
+                        <input type="checkbox" name="remember" id="remember">
+                        <label for="remember">Remember me</label>
+                    </div>
+                    <a href="">Forgot your password?</a>
+                </div>
+
+                <button type="" id="submit-form">ENTER</button>
+                <p id="sign-up">Don't have an account? <a href="" class="orange-txt" id="sign-up-btn">Sign up now!</a> </p>
+
+            </form>
+        </div>
+    </main>
+
+    <aside>
+        <h1>The Fastest Delivery In <span class="orange-txt">Your City</span></h1>
+    </aside>
+
+    <script src="scripts/sign-in-form.js"></script>
+</body>
+</html>

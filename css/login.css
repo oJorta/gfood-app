@@ -1,0 +1,157 @@
+body{
+    display: flex;
+    width: 100vw;
+    margin: 0 auto;
+}
+
+main, aside{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100vh;
+}
+
+main{
+    flex-direction: column;
+    position: relative;
+}
+
+aside{
+    text-align: center;
+}
+
+.app-logo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 3rem 0rem 7rem 3rem;
+    height: 6.5rem;
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    padding: 4rem 3rem;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 5px 0px #b5b5b5;
+}
+
+.form-container > p{
+    padding-bottom: 2rem;
+}
+
+.sign-title{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: .8rem;
+}
+
+.sign-title img{
+    height: 3rem;
+}
+
+form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+form div{
+    display: flex;
+}
+
+.inputs-container, .form-row{
+    flex-direction: column;
+}
+
+.inputs-container{
+    width: 100%;
+    gap: 1rem;
+}
+
+.login-options{
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.remember-me{
+    gap: .8rem;
+    align-items: center;
+}
+
+label{
+    font-weight: 500;
+    font-size: 1.6rem;
+}
+
+input{
+    width: 100%;
+    padding: .8rem;
+    border-radius: .5rem;
+    border: 2px solid var(--tangerine-clr);
+}
+
+input[type="checkbox"]{
+    all: unset;
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid #000;
+    border-radius: .4rem;
+}
+
+input[type="checkbox"]:checked{
+    background-color: var(--tangerine-clr);
+    background-image: url(/assets/icons/check.svg);
+}
+
+.form-row > input:focus,
+.form-row > input:valid{
+    border: none;
+    outline: 3px solid green;
+    box-shadow: 0px 0px 5px green;
+}
+
+.form-row > input:focus:invalid{
+    border: none;
+    outline: 3px solid #c80000;
+    box-shadow: 0px 0px 5px #c80000;
+}
+
+.invalid{
+    outline: 1px solid #c80000 !important;
+    box-shadow: 0px 0px 5px #c80000 !important;
+}
+
+
+#submit-form{
+    cursor: pointer;
+    width: 100%;
+    padding: 1.5rem;
+    border: 0;
+    border-radius: .8rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: var(--tangerine-clr);
+    transition: 0.4s;
+}
+
+#submit-form:hover{
+    transform: scale(1.02);
+    box-shadow: 0px 0px 8px 0px #9a9a9a;
+    transition: 0.4s;
+}
+
+
+.orange-txt{
+    color: var(--tangerine-clr);
+}

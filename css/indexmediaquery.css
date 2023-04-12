@@ -185,16 +185,7 @@
     }
 
     .search-bar{
-        gap: 1rem;
-        padding: 1rem;
-    }
-    
-    .search-bar > input{
-        width: 6rem;
-    }
-    
-    .search-bar > img{
-        height: 1.5rem;
+        display: none;
     }
 
     .presentation{
