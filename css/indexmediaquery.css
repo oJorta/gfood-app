@@ -120,7 +120,7 @@
 
     .steps-wrapper .step:nth-child(2)::before{
         content: '';
-        background: url(/assets/misc/step-prepare.png) no-repeat bottom center;
+        background: url(../assets/img/misc/step-prepare.png) no-repeat bottom center;
         background-size: contain;
         width: 25rem;
         height: 18rem;
@@ -186,6 +186,10 @@
 
     .search-bar{
         display: none;
+    }
+
+    .bike-delivery{
+        align-self: center;
     }
 
     .presentation{
